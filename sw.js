@@ -1,9 +1,10 @@
 self.addEventListener('install', e => {
     e.waitUntil(
         caches.open('store').then(cache => cache.addAll([
-            '/index.html/',
-            '/main.js/',
-            '/styles.css/',
+            '/index.html',
+            '/main.js',
+            '/styles.css',
+            '/',
         ])),
     );
 });
